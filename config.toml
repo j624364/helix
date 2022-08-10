@@ -12,15 +12,15 @@ display-messages = true
 #render = "all"
 
 [editor.whitespace.render]
-space = "all"
+space = "none"
 tab = "all"
 newline = "none"
 
 [editor.whitespace.characters]
-space = "·"
+#space = "·"
 nbsp = "⍽"
 tab = "→"
-newline = "⏎"
+#newline = "⏎"
 
 [editor.cursor-shape]
 insert = "bar"
