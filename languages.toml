@@ -1,0 +1,25 @@
+[[language]]
+name = "rune"
+scope = "source.rn"
+injection-regex = "rune"
+file-types = ["rn", "rune"]
+roots = ["mlwf.json", "mlwf.yml", "mlwf.yaml"]
+auto-format = false
+comment-tokens = ["//", "///", "//!"]
+block-comment-tokens = [
+  { start = "/*", end = "*/" },
+  { start = "/**", end = "*/" },
+  { start = "/*!", end = "*/" },
+]
+indent = { tab-width = 4, unit = "    " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+
+[[grammar]]
+name = "rune"
+source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9" }
